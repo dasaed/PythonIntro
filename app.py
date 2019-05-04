@@ -115,6 +115,8 @@ print("cars.index(\"bmw\")")
 print(cars.index("bmw"))
 print("cars[4]")
 print(cars[4])
+print("*cars")
+print(cars)
 print("")
 print("")
 print("superheros")
@@ -145,6 +147,10 @@ superheros.pop()
 print(superheros)
 print("")
 print("")
+print("superheros.index('spiderman') = throws the index of the location of spiderman")
+superheros.index('spiderman')
+print("")
+print("")
 print("superheros.clear() = removes all elements from superheros")
 superheros.clear()
 print(superheros)
@@ -161,6 +167,128 @@ print("superheros.append(\"audi\")")
 superheros.append("audi")
 print("superheros.count(\"audi\")")
 print(superheros.count("audi"))
+print("")
+print("")
+
+print("cars.reverse() = reverses the order of the list")
+print(*cars)
+cars.reverse()
+print(*cars)
+print("")
+print("")
+print("cars.sort() = sorts the list")
+print(*cars)
+cars.sort()
+print(*cars)
+
+print("")
+print("")
+print("cars2 = cars.copy() = copies list to a completely new one")
+print(*cars)
+cars2 = cars.copy()
+print(*cars2)
+cars2.append("chevrolet")
+print(*cars)
+print(*cars2)
+
+
+
+print("#####################################################")
+print("#####################################################")
+
+print("Now we are moving on to tuples")
+print("coordinates = (4,6)")
+coordinates = (4,6)
+print("print(coordinates[0])")
+print(coordinates[0])
+
+
+print("#####################################################")
+print("#####################################################")
+print("Now we are moving on to functions!!!")
+
+def say_hi(name, father, mother):
+    print("Hello "+name+" Son of "+father+" and "+mother)
+    return "this function works"
+
+def cube(a):
+    c = pow(a,3)
+    return c
+    
+print("Top")
+say_hi("dasaed", "Father", "Mother")
+result = cube(5)
+print("Bottom")
+print(cube(3))
+print(result)
+print("")
+print("")
+print("")
+
+
+
+
+
+if (skipper == "Y" or skipper == "y" or skipper == " "):
+    print("#####################################################")
+    print("#####################################################")
+    print("if statements:")
+    is_male = True
+    is_tall = False
+    is_fat = False
+    is_rich = True
+    if ( is_male or is_tall ) and is_fat == True:
+        print ("You are a male")
+    elif not(is_rich):
+        print("You are poor")
+    else:
+        print("You are a female")
+        
+def max_num(num1,num2,num3):
+    if num1 > num2 and num1 > num3:
+        print(str(num1)+" is the biggest number")
+
+    elif num1 > num2 and num1<num3:
+        print(str(num3)+" is the biggest number")
+
+    elif num1 < num2 and num1>num3:
+        print(str(num2)+" is the biggest number")
+
+    elif num1 < num2 and num1 < num3:
+        if num2 > num3:
+            print(str(num2)+" is the biggest number")
+        else:
+            print(str(num3)+" is the biggest number")
+
+    else:
+        print(str(num3)+" is the biggest number")
+
+if (skipper == "Y" or skipper == "y" or skipper == " "):
+    print("#####################################################")
+    print("#####################################################")
+    num1 = input("Enter Number 1: ")
+    num2 = input("Enter Number 2: ")
+    num3 = input("Enter Number 3: ")
+    max_num(float(num1),float(num2),float(num3))
+
+
+
+print("#####################################################")
+print("#####################################################")
+print("Starting Dictionaries")
+monthConversion = {
+        "Jan": "January"
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 
