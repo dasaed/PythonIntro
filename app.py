@@ -276,20 +276,64 @@ if (skipper == "Y" or skipper == "y" or skipper == " "):
 print("#####################################################")
 print("#####################################################")
 print("Starting Dictionaries")
-monthConversion = {
-        "Jan": "January"
+monthConversion1= {
+        "Jan": "January",
+        "Feb": "February",
+        "Mar": "March",
+        "Apr": "April",
+        "May": "May",
+        "Jun": "June",
+        "Jul": "July",
+        "Aug": "August",
+        "Sep": "September",
+        "Oct": "October",
+        "Nov": "November",
+        "Dec": "December"
         }
 
+monthConversion2 = {
+        "0": "undefined",
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December",
+        }
+print(monthConversion1)
+print("print(monthConversion1)")
+print(monthConversion1["Nov"])
+print(monthConversion1.get("Nov"))
+print('print(monthConversion1.get("Nov"))')
+print(monthConversion1.get("das","not a valid key"))
+print(monthConversion2["2"])
 
 
 
 
 
 
+print("#####################################################")
+print("#####################################################")
+print("Now we are going to start with the while loops")
 
 
 
-
+whilevar = 0
+i = 0
+while (whilevar == 0):
+    i+=1
+    print("I'm on loop "+str(i) )
+    stop = input("Do you want to exit this while loop?")
+    if stop == "Y" or stop == "y":
+        whilevar = 1
+    
 
 
 
