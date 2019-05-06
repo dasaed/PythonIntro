@@ -335,13 +335,22 @@ while (whilevar == 0):
         whilevar = 1
     
 
+print("#####################################################")
+print("#####################################################")
+print("Now we are going to start with the for loops")
+
+for letter in "work hard, play hard":
+    print(letter)
 
 
+superheros = ["wolverine","spiderman","thor", "ironman","hulk", "hawk eye", "gambit"]
+for hero in superheros:
+    print(hero)
+for number in range(len(superheros)):
+    print(str(number)+" superhero")
 
-
-
-
-
+for index in range(10):
+    print(index)
 
 
 
