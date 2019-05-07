@@ -57,6 +57,8 @@ Here are some examples of the output of the math functions
 """)
 from math import *
 print("print(pow(3,6) = "+str(pow(3,6)))
+print("side note: python can also do exponents with '**'")
+print("print(str(3**6)) = "+str(3**6))
 print("print(max(3,6) = "+str(max(3,6)))
 print("print(min(3,6) = "+str(min(3,6)))
 print("print(round(4.6) = "+str(round(4.6)))
@@ -354,16 +356,61 @@ for index in range(10):
 
 
 
+print("#####################################################")
+print("#####################################################")
+print("Nested loops and 2-dimensional lists")
+number_grid = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9],
+        [0]
+        ]
+print("print(number_grid)")
+print(number_grid)
+print("print(number_grid[0][2])")
+print(number_grid[0][2])
+
+for row in number_grid:
+    print(row)
+    for col in row:
+        print(col)
 
 
 
 
 
 
+print("#####################################################")
+print("#####################################################")
+print("Building a basic translator in python")
+print("We are building a made up language.")
+#
+
+def translate(phrase):
+    translation = ""
+    for char in phrase:
+        if char == "a" or char == "A":
+            translation = translation + "1"
+         
+        elif char == "e" or char == "e":
+            translation = translation + "2"
+
+        elif char == "i" or char == "I":
+            translation = translation + "3"
 
 
+        elif char == "o" or char == "O":
+            translation = translation + "4"
 
+        elif char == "u" or char == "U":
+            translation = translation + "5"
 
+        else:
+            translation = translation + str(char)
+
+    return translation
+
+print(translate(input("Enter a phrase: ")))
 
 
 
