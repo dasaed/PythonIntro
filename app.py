@@ -344,7 +344,6 @@ print("Now we are going to start with the for loops")
 for letter in "work hard, play hard":
     print(letter)
 
-
 superheros = ["wolverine","spiderman","thor", "ironman","hulk", "hawk eye", "gambit"]
 for hero in superheros:
     print(hero)
@@ -353,8 +352,6 @@ for number in range(len(superheros)):
 
 for index in range(10):
     print(index)
-
-
 
 print("#####################################################")
 print("#####################################################")
@@ -375,16 +372,11 @@ for row in number_grid:
     for col in row:
         print(col)
 
-
-
-
-
-
-print("#####################################################")
-print("#####################################################")
-print("Building a basic translator in python")
-print("We are building a made up language.")
-#
+if (skipper == "Y" or skipper == "y" or skipper == " "):
+    print("#####################################################")
+    print("#####################################################")
+    print("Building a basic translator in python")
+    print("We are building a made up language.")
 
 def translate(phrase):
     translation = ""
@@ -410,7 +402,87 @@ def translate(phrase):
 
     return translation
 
-print(translate(input("Enter a phrase: ")))
+
+if (skipper == "Y" or skipper == "y" or skipper == " "):
+    print(translate(input("Enter a phrase: ")))
+
+
+
+print("#####################################################")
+print("#####################################################")
+print("Handling errors with 'try' and 'except'")
+
+try:
+    zerodiv = 10/0
+    number = int(input("Enter a number ") )
+    print(number)
+except ZeroDivisionError as err:
+    print(err)
+except ValueError:
+    print("Invalid input")
+except:
+    print("There is some error somewhere in the code")
+
+
+print("#####################################################")
+print("#####################################################")
+
+'''
+This is a way of making multiline comments, but it is not a recommended way. 
+it's getter to use use the # symbol
+'''
+
+
+print("#####################################################")
+print("#####################################################")
+print("Reading from files")
+
+print("Python has a read command to read different input file types")
+print("""When you open a file, you can open it in 3 different modes:
+        r = read only
+        w = write
+        a = append
+        r+ = read and write""")
+print("The following commands are what you need to open and close a file. Do not forget to close a file after you are done using it.")
+print('myskills = open("./skills.txt", "r")')
+myskills = open("./skills.txt", "r")
+print('myskills.close()')
+myskills.close()
+
+print('myskills = open("./skills.txt", "r")')
+myskills = open("./skills.txt", "r")
+print("Checking if a file is readable (good practice to do before opening a file)")
+print("myskills.read()=basic standard command to read a file")
+print(myskills.read())
+print("myskills.readable()")
+print(myskills.readable())
+print("myskills.readline() = reads the first line, and then moves on to the next line. (executing this line twice will print the first 2 lines, not the same line twice)")
+print(myskills.readline())
+myskills.close()
+myskills = open("./skills.txt", "r")
+print("myskills.readlines() = converts every line of the file into an array")
+print(myskills.readlines())
+
+myskills.close()
+
+
+
+print("#####################################################")
+print("#####################################################")
+import random
+print("Writing to files")
+random_file = open("./random.txt", "a")
+rannum1 = random.randint(0,100)
+rannum2 = random.randint(0,100)
+rannum3 = random.randint(0,100)
+random_file.write("\nRandom Numbers : "+str(rannum1)+" "+str(rannum2)+" "+str(rannum3)+"")
+random_file.close()
+rrandom_file = open("./random.txt", "r")
+print(rrandom_file.read())
+rrandom_file.close()
+
+
+
 
 
 
