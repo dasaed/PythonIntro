@@ -466,7 +466,6 @@ print(myskills.readlines())
 myskills.close()
 
 
-
 print("#####################################################")
 print("#####################################################")
 import random
@@ -480,6 +479,60 @@ random_file.close()
 rrandom_file = open("./random.txt", "r")
 print(rrandom_file.read())
 rrandom_file.close()
+
+print("You can also use the 'w' mode to overwrite existing files, or create a new")
+random_file = open("./random2.txt", "w")
+random_file.write("\nSome Numbers : "+str(rannum1)+" "+str(rannum2)+" "+str(rannum3)+"")
+random_file.write("\nMore Numbers : "+str(rannum1)+" "+str(rannum2)+" "+str(rannum3)+"")
+random_file.write("\nAnd some more Numbers : "+str(rannum1)+" "+str(rannum2)+" "+str(rannum3)+"")
+random_file.close()
+
+
+print("#####################################################")
+print("#####################################################")
+print("Modules and pip")
+print("A module is basically another python file you can import into your current project")
+import useful_tools
+print(useful_tools.roll_dice(35))
+print("As of today (May 9, 2019), a full list of python modules can be found in https://docs.python.org/3/py-modindex.html")
+print("Installing modules outside of python's local repository is easy, but requires a little bit of extra effort")
+print("To install modules, you must use the pip from the terminal, or cmd if using windows")
+print("The command to execute is pip (it's the same for Linux and Windows), and just run it as:")
+print(">pip install <module-name-to-install>")
+print("as an example, you can look online for external python modules, and run the command")
+print("A simple example could be:")
+print("pip install python-docx")
+print("pip is easy to use, and likewise, to unistall a package, pip can also be used")
+print("pip uninstall python-docx")
+print("Pip installs modules to your computer, but it doesn't get added automatically to your code.")
+print("you would still need to include the 'import module-name' to be able to use the newly installed modules")
+
+
+
+print("#####################################################")
+print("#####################################################")
+print("Classes and Objects")
+
+from student import Student
+
+student1 = Student("Jane Doe", "Computer Science", 3.1)
+student2 = Student("John Smith", "History", 3.6)
+student3 = Student("Fulanito de Tal", "Biology", 4.0)
+
+print(student1.name)
+print(student1.gpa)
+print(student1.major)
+print(student1.on_honor_roll())
+print(student1.on_honor_roll())
+
+
+
+
+
+
+
+
+
 
 
 
