@@ -1,0 +1,5 @@
+Server Operating Systems - Redhat, SUSE, AIX
+Desktop Operating Systems - Redhat, Ubuntu, Mac OS, Windows
+Scripting Languages - Shell Scripting, Python
+Certifications - SUSE 12 certified, AIX V1 Certified, First Aid Certified
+Other Skills -  Team-work, Communication, Leadership, innovation
